@@ -1,21 +1,16 @@
 
-console.log('Hello World');
 
-firstPara = document.querySelector('#Color');
+// print selected color on console 
 
-console.log(firstPara.value);
-
-secondPara = document.querySelector('#div-2');
-
-if (firstPara.value == 'red') {
-    secondPara.style.color = "red";
+function select(value) {
+    console.log(value);
+    let body = document.getElementsByTagName('body');
+    console.log(body[0]);
+    body[0].style.backgroundColor = value;
 }
-else if (firstPara.value == 'blue') {
-    secondPara.style.color = "blue";
-}
-else if (firstPara.value == 'green') {
-    secondPara.style.color = "green";
-}
+
+// print selected color on html page
+
 
 
 
